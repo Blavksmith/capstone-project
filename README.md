@@ -1,46 +1,43 @@
-Sip Melvin 🚀, aku bikinkan draft **README.md** untuk project **AI Pickup Line Generator** kamu.
-
----
-
 ````markdown
 # 💘 AI Pickup Line Generator
 
 Bikin pickup line lucu, gaul, dan kreatif cuma dengan satu kata!  
-Aplikasi ini menggunakan **IBM Watsonx.ai Granite Model** untuk menghasilkan pickup line otomatis berdasarkan tema/keyword yang dimasukkan user.
+Aplikasi ini menggunakan **IBM Watsonx.ai Granite Model** untuk menghasilkan pickup line otomatis berdasarkan tema atau keyword yang dimasukkan user.
 
 ---
 
 ## 📖 Description
-AI Pickup Line Generator adalah aplikasi berbasis **Next.js** yang memungkinkan user memasukkan sebuah kata (contoh: *coffee*, *coding*, *pizza*), lalu AI akan menghasilkan pickup line unik dan kocak.  
+**AI Pickup Line Generator** adalah aplikasi berbasis **Next.js** yang memungkinkan user memasukkan sebuah kata (contoh: *coffee*, *coding*, *pizza*), lalu AI akan menghasilkan pickup line unik dan kocak.  
 
-Aplikasi ini cocok untuk hiburan, ice-breaking, atau sekadar iseng nyari pickup line kece buat chat 😎.
+Cocok untuk hiburan, ice-breaking, atau sekadar iseng cari pickup line kece buat chat 😎.
 
 ---
 
 ## 🛠️ Technologies Used
-- **Frontend & Backend**
-  - [Next.js (App Router v14/15)](https://nextjs.org/)
-  - [React](https://react.dev/)
-  - [Node.js (v18+)](https://nodejs.org/)
 
-- **AI Platform**
-  - [IBM Watsonx.ai Granite Model](https://www.ibm.com/watsonx/ai)
+### 🔹 Frontend & Backend
+- [Next.js (App Router v14/15)](https://nextjs.org/)  
+- [React](https://react.dev/)  
+- [Node.js (v18+)](https://nodejs.org/)  
 
-- **Libraries & Tools**
-  - [Axios](https://axios-http.com/) → HTTP request ke Granite API
-  - [dotenv](https://www.npmjs.com/package/dotenv) → Simpan API Key & Project ID
-  - [TailwindCSS](https://tailwindcss.com/) → styling UI
-  - [Vercel](https://vercel.com/) → deployment
-  - [Postman](https://www.postman.com/) → testing API
+### 🔹 AI Platform
+- [IBM Watsonx.ai Granite Model](https://www.ibm.com/watsonx/ai)  
+
+### 🔹 Libraries & Tools
+- [Axios](https://axios-http.com/) → HTTP request ke Granite API  
+- [dotenv](https://www.npmjs.com/package/dotenv) → Simpan API Key & Project ID  
+- [TailwindCSS](https://tailwindcss.com/) → Styling UI  
+- [Vercel](https://vercel.com/) → Deployment  
+- [Postman](https://www.postman.com/) → Testing API  
 
 ---
 
 ## ✨ Features
-- Input kata/tema → AI generate pickup line lucu & gaul
-- 🎲 Random Mode → generate pickup line random tanpa tema
-- 📋 Copy to Clipboard → langsung copy pickup line hasil AI
-- Responsif & modern UI dengan TailwindCSS
-- Deployable ke **Vercel** hanya dengan 1 klik
+- 📝 Input kata/tema → AI generate pickup line lucu & gaul  
+- 🎲 Random Mode → generate pickup line random tanpa tema  
+- 📋 Copy to Clipboard → langsung copy pickup line hasil AI  
+- 🎨 Modern & responsif UI dengan TailwindCSS  
+- 🚀 Deployable ke **Vercel** hanya dengan 1 klik  
 
 ---
 
@@ -58,9 +55,9 @@ cd pickup-line-ai
 npm install
 ```
 
-### 3. Buat `.env.local`
+### 3. Konfigurasi Environment Variables
 
-Isi dengan kredensial IBM Watsonx.ai:
+Buat file `.env.local` di root project, lalu isi:
 
 ```env
 IBM_API_KEY=your_ibm_api_key
@@ -74,7 +71,7 @@ GRANITE_URL=https://us-south.ml.cloud.ibm.com
 npm run dev
 ```
 
-Buka di browser: [http://localhost:3000](http://localhost:3000)
+Buka di browser → [http://localhost:3000](http://localhost:3000)
 
 ### 5. Build untuk Production
 
@@ -89,10 +86,13 @@ npm start
 
 Aplikasi ini menggunakan **Watsonx.ai Granite Model** dari IBM untuk menghasilkan teks.
 
-Alurnya:
+### 🔹 Flow:
 
-1. User masukkan keyword (contoh: *coffee*).
+1. User memasukkan keyword (contoh: *coffee*).
 2. Next.js API Route (`/api/pickup`) mengirim request ke Granite API.
 3. Granite memproses prompt → menghasilkan pickup line unik.
 4. Hasil dikirim balik ke frontend → ditampilkan di UI.
-5. User bisa copy pickup line atau generate lagi dengan mode random.
+5. (Opsional) User bisa **copy** pickup line atau pakai **random mode**.
+
+
+```

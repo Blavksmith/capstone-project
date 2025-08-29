@@ -1,4 +1,3 @@
-````markdown
 # 💘 AI Pickup Line Generator
 
 Bikin pickup line lucu, gaul, dan kreatif cuma dengan satu kata!  
@@ -94,5 +93,3 @@ Aplikasi ini menggunakan **Watsonx.ai Granite Model** dari IBM untuk menghasilka
 4. Hasil dikirim balik ke frontend → ditampilkan di UI.
 5. (Opsional) User bisa **copy** pickup line atau pakai **random mode**.
 
-
-```
